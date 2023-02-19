@@ -7,7 +7,6 @@ const Filter = (prop) => {
           className="form-select"
           onChange={(event) => prop.onFilterChange(event.target.value)}
         >
-          <option value={""}>All</option>
           <option value={2023}>2023</option>
           <option value={2022}>2022</option>
           <option value={2021}>2021</option>

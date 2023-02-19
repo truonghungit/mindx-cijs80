@@ -1,4 +1,6 @@
-import { useState } from "react";
+function currencyFormat(num) {
+  return "$" + num.toFixed(0).replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.");
+}
 
 const TransactionItem = (prop) => {
   return (
@@ -9,7 +11,7 @@ const TransactionItem = (prop) => {
             <div>{prop.date}</div>
             <div className="ms-3">{prop.name}</div>
           </div>
-          <div>{prop.amount}</div>
+          <div>{currencyFormat(prop.amount)}</div>
         </div>
       </div>
     </div>

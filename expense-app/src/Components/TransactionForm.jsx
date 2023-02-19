@@ -5,7 +5,7 @@ const TransactionForm = (prop) => {
   const [formValue, setFormValue] = useState({
     name: "",
     amount: 0,
-    date: null,
+    date: "",
   });
 
   const handleChange = (event) => {
@@ -20,7 +20,7 @@ const TransactionForm = (prop) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log("formValue", formValue);
+    formValue.amount = parseFloat(formValue.amount);
     prop.onAddNew && prop.onAddNew(formValue);
   };
 

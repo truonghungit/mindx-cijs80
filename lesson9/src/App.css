@@ -2,11 +2,6 @@
   text-align: center;
 }
 
-.app-container {
-  max-width: 600px;
-  margin: auto;
-}
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -37,31 +32,7 @@
   from {
     transform: rotate(0deg);
   }
-
   to {
     transform: rotate(360deg);
   }
-}
-
-.chart-container {
-
-  justify-content: space-between;
-}
-
-.chart-item {
-  height: 300px;
-  width: 20px;
-  background-color: rgb(242 239 239);
-  position: relative;
-  border-radius: 99px;
-  overflow: hidden;
-  border: 2px solid rebeccapurple;
-}
-
-.chart-item-inner {
-  background-color: green;
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  width: 100%;
 }
